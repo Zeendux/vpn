@@ -3,13 +3,21 @@
 
 body {
   font-family: 'Rubik', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
+
+/* HEADER */
 
 .header {
   margin-top: 46px;
@@ -54,6 +62,91 @@ body {
   color: #f53855 !important;
 }
 
+/* FOOTER */
+
+footer {
+  background-color: #f8f8f8;
+  margin-top: auto;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-bottom: 100px;
+  padding-top: 65px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-info {
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-right: auto;
+}
+.logo {
+}
+.logotype {
+}
+.logo-bold {
+}
+.footer-text {
+  color: #4f4f56;
+}
+.footer-text span {
+  font-weight: 500;
+}
+.footer-social-icons {
+  display: flex;
+  column-gap: 20px;
+}
+.footer-social-icons a {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: -6px 4px 15px #b8b8b8;
+  cursor: pointer;
+  position: relative;
+}
+
+.footer-social-icons a svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.w-6 {
+}
+.h-6 {
+}
+.text-gray-800 {
+}
+.dark:text-white {
+}
+.footer-copyright {
+  color: #afb5c0;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  white-space: nowrap;
+  margin-right: auto;
+}
+.footer-links li:first-child {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer-links-item {
+}
+
 /* HOVER EFFECT */
 @media (hover: hover) {
   .navlink:hover {
@@ -64,6 +157,17 @@ body {
     transition: background ease 0.2s;
     background: #f53855;
     color: white !important;
+  }
+  .footer-links-item:hover {
+    text-decoration: underline;
+  }
+  .footer-social-icons a:hover {
+    transition: all ease 0.5s;
+    background: #f53855;
+    box-shadow: 0 0 17px #f53855;
+  }
+  .footer-social-icons a:hover path {
+    fill: white;
   }
 }
 
@@ -133,6 +237,13 @@ body {
   }
 }
 
+@media (max-width: 892px) {
+  .footer-wrapper {
+    justify-content: space-around;
+    gap: 30px;
+  }
+}
+
 @media (max-width: 580px) {
   .logo {
     font-size: 17px;
@@ -154,7 +265,7 @@ body {
 }
 
 @media (max-width: 389px) {
-  .logo p {
+  .header-logo p {
     display: none;
   }
   .logotype {
@@ -164,3 +275,7 @@ body {
     width: 65vw;
   }
 }
+
+/*  */
+
+/*  */
