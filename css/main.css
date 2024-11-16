@@ -8,6 +8,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-content: center;
+  overflow-x: hidden;
 }
 
 .container {
@@ -147,6 +149,52 @@ footer {
 .footer-links-item {
 }
 
+/* HERO SECTION */
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+.hero-info {
+  max-width: 550px;
+  row-gap: 20px;
+}
+.hero-button {
+  padding: 17px 77px;
+  background-color: #f53855;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px #f5385493;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.hero-p {
+  line-height: 1.5;
+  color: #4f5665;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+p span {
+  font-weight: 500;
+}
+
+.man-first {
+  width: 36vw;
+  margin-right: 90px;
+}
 /* HOVER EFFECT */
 @media (hover: hover) {
   .navlink:hover {
@@ -168,6 +216,15 @@ footer {
   }
   .footer-social-icons a:hover path {
     fill: white;
+  }
+  .hero-button:hover {
+    padding: 17px 77px;
+    background-color: white;
+    color: #f53855;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px #f53854b0;
+    transition: all ease 0.3s;
   }
 }
 
@@ -235,6 +292,32 @@ footer {
   .hamburger-icon.active div {
     background-color: white;
   }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 80px 0;
+  }
+  .hero-info {
+    row-gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .man-first {
+    width: 400px;
+    margin-top: 20px;
+  }
+  .hero-header,
+  .hero-p {
+    text-align: center;
+  }
+  .hero-p {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 892px) {
@@ -262,6 +345,12 @@ footer {
   .header-wrapper .btn {
     padding: 10px 20px;
   }
+  .hero-header {
+    font-size: 40px;
+  }
+  .man-first {
+    width: 250px;
+  }
 }
 
 @media (max-width: 389px) {
@@ -273,6 +362,11 @@ footer {
   }
   .navbar.active {
     width: 65vw;
+  }
+  .man-first {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }
 
