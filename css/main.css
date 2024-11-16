@@ -298,7 +298,7 @@ p span {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 80px 0;
+    padding: 80px 20px;
   }
   .hero-info {
     row-gap: 15px;
@@ -309,6 +309,7 @@ p span {
   .man-first {
     width: 400px;
     margin-top: 20px;
+    margin: 0 auto;
   }
   .hero-header,
   .hero-p {
@@ -317,6 +318,12 @@ p span {
   .hero-p {
     margin-bottom: 20px;
     margin-top: 10px;
+    font-size: 16px;
+    width: 320;
+  }
+  .hero-info {
+    max-width: 550px;
+    row-gap: 10px;
   }
 }
 
@@ -324,6 +331,9 @@ p span {
   .footer-wrapper {
     justify-content: space-around;
     gap: 30px;
+  }
+  .man-first {
+    margin: 0 auto;
   }
 }
 
@@ -349,7 +359,8 @@ p span {
     font-size: 40px;
   }
   .man-first {
-    width: 250px;
+    width: 280px;
+    margin: 0 auto;
   }
 }
 
